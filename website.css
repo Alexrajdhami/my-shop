@@ -7,6 +7,14 @@
     list-style: none;
     text-decoration: none;
 }
+
+body,html{
+    overflow-x:hidden;
+    min-height: 100%;
+    width: 100%;
+}
+
+
 .header{
     position:fixed;
     width: 100%;
@@ -25,17 +33,18 @@
 .nav-bar a{
   
         color: #141515;
-        z-index: 1001; /* Increased z-index */
+        z-index: 1001;
         font-size: 16px;
         text-transform: capitalize;
         padding: 10px 20px;
         transition: all .42s ease;
         font-weight: 400;
-        position: relative; /* Added position relative */
+        position: relative; 
 }
 .search-form {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .search-input {
@@ -51,12 +60,22 @@
     background: #779876;
     border: none;
     outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    border-radius: 3px 0 0 3px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    width: 50px;
 }
 
 .search-button i {
     color: #fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
 }
 
 /* Adjustments for other icons */
@@ -97,19 +116,19 @@ ul li {
 
 .nav-bar a {
     color: #141515;
-    z-index: 1001; /* Increased z-index */
+    z-index: 1001; 
     font-size: 16px;
     text-transform: capitalize;
     padding: 10px 20px;
     transition: all .42s ease;
     font-weight: 400;
-    position: relative; /* Added position relative */
+    position: relative; 
 }
 
 ul li a:hover {
     color: aquamarine;
     transform: scale(1.05);
-    z-index: 1002; /* Increased z-index for hover effect */
+    z-index: 1002; 
 }
 .nav-icon {
     display: flex;
@@ -146,26 +165,26 @@ Section{
 
 }
 .main-text h1 {
-    color: #fff; /* Changed to white for better contrast */
-    font-size: 48px; /* Increased font size for impact */
-    text-transform: uppercase; /* Changed to uppercase for a bolder look */
-    font-weight: 700; /* Increased weight for emphasis */
-    margin-bottom: 0.5rem; /* Added bottom margin for spacing */
+    color: #fff; 
+    font-size: 48px;
+    text-transform: uppercase; 
+    font-weight: 700; 
+    margin-bottom: 0.5rem; 
 }
 
 .main-text h2 {
-    color: #04c2c9; /* Changed to a bright, brand-specific color */
-    font-size: 36px; /* Reduced font size for hierarchy */
-    text-transform: uppercase; /* Consistency in transformation */
-    line-height: 1.2; /* Adjusted line height for readability */
-    font-weight: 700; /* Consistent weight with h1 */
-    margin: 0.5rem 0; /* Adjusted margin for spacing */
+    color: #04c2c9; 
+    font-size: 36px; 
+    text-transform: uppercase; 
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0.5rem 0; 
 }
 .main-text p {
-    color: #fff; /* Changed to white for readability */
-    font-size: 18px; /* Increased font size for visibility */
-    font-weight: 400; /* Normal weight for body text */
-    margin-bottom: 1rem; /* Added bottom margin for spacing */
+    color: #fff;
+    font-size: 18px; 
+    font-weight: 400; 
+    margin-bottom: 1rem; 
 }
 .main-btn{
     display: inline-block;

@@ -1,74 +1,75 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+footer {
+    background: #111;
+    color: #fff;
+    padding: 40px 0;
+    font-family: 'Jost', sans-serif;
 }
-.icon h2{
-    color: #40615e;
-}
-.footer-content{
-    background-color: rgb(15, 26, 26);
-   padding: 10px 0;
-   
 
-}
-.container{
-    max-width: 1170px;
+.footer-content .container {
+    max-width: 1200px;
     margin: auto;
 }
-.row{
+
+.footer-content .row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.footer-contact{
-    width: 20%;
-    padding: 0 15px;
+.footer-contact {
+    min-width: 180px;
+    margin: 15px;
 }
-.footer-contact h4{
-    font-size: 18px;
-    color: #fff;
-    text-transform: capitalize;
-    margin-bottom: 30px;
-    font-weight: 500px;
-    position: relative;
-}
-.footer-contact h4::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: brown;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
-}
-.footer-contact ul li{
-    margin-bottom: 10px;
-}
-.footer-contact ul li a{
+
+.footer-contact h4 {
     font-size: 16px;
-    text-transform: capitalize;
-    color: #000;
+    margin-bottom: 10px;
+    color: #04c2c9;
+}
+
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contact ul li {
+    margin-bottom: 6px;
+}
+
+.footer-contact ul li a {
+    color: #ccc;
     text-decoration: none;
-    font: weight 300;
-    color: cadetblue;
-    display: block;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
-.footer-contact ul li a:hover{
-    color: #009688;
-    padding-left: 10px;
+
+.footer-contact ul li a:hover {
+    color: #04c2c9;
 }
-.featured-content social links{
-display: inline-block;
-height: 40px;
-width: 40px;
-background-color: rgb(255, 255, 255, 0.2);
-margin: 0 10px 10px 0;
-text-align: center;
-line-height: 40px;
-border-radius: 50%;
-color: #fff;
-transition: all 0.5s ease;
+
+.logo {
+    font-size: 22px;
+    color: #04c2c9;
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #04c2c9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-content .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-contact {
+        margin-bottom: 20px;
+    }
 }
